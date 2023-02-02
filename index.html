@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>The Sims Mini</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <header align="center">
+            <h1>
+                LIFE SIMULATOR ON JAVASCRIPT ONLY
+            </h1>
+        </header>
+        <div class="main_tables_container">
+            <div id="day_counter_panel">
+            <table align="center">
+                <tr>
+                    <td colspan="2">
+                        <h2 align="center">Пережито дней: 
+                            <div id="days_counter">
+                            1
+                            </div>
+                            
+                        </h2>
+                    </td>
+                    <td colspan="2">
+                        <h2 align="center">Множитель сложности: 
+                            <div id="difficulty_counter">
+                            1
+                            </div>
+                            
+                        </h2>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <table align="center">
+            <div id="stats_panel">
+                <tr align="center">
+                    <td><h3>Сытость</h3></td>
+                    <td><h3>Здоровье</h3></td>
+                    <td><h3>Энергия</h3></td>
+                    <td><h3>Деньги</h3></td>
+                </tr>
+            </div>
+                <tr align="center">
+                    <td><h2><div id="hunger">100%</h2></div></td>
+                    <td><h2><div id="health">100%</h2></div></td>
+                    <td><h2><div id="energy">100%</h2></div></td>
+                    <td><h2><div id="cash">1000</div></h2></td>
+                </tr>
+            <div id="game_controls">
+                <tr align="center">
+                    <td><button onclick="eating(0, 25)">Поесть на помойке</button></td>
+                    <td><button onclick="eating(100, 40)">Дешевый обед из АТБ</button></td>
+                    <td><button onclick="eating(500, 60)">Покушать в кафе</button></td>
+                    <td><button onclick="eating(1500, 100)">Сходить в ресторан</button></td>
+                </tr>
+                <tr align="center">
+                    <td><button onclick="sleeping(0, 30)">Поспать на улице</button></td>
+                    <td><button onclick="sleeping(100, 45)">Отоспаться на вокзале</button></td>
+                    <td><button onclick="eating(500, 60)">Покушать в кафе</button></td>
+                    <td><button onclick="eating(1500, 100)">Сходить в ресторан</button></td>
+                </tr>
+                <tr align="center">
+                    <td><button onclick="sleeping(0, 30)">Поспать на улице</button></td>
+                    <td><button onclick="sleeping(100, 45)">Отоспаться на вокзале</button></td>
+                    <td><button onclick="eating(500, 60)">Покушать в кафе</button></td>
+                    <td><button onclick="eating(1500, 100)">Сходить в ресторан</button></td>
+                </tr>
+            </div>  
+            </table>
+        </div>
+            <table id="debug_table" align="center">
+                <th colspan="4" align="center"><h2>Инструменты дебага</h2></th>
+                <tr>
+                    <td colspan="2"><button onclick="next_day()">Пропустить день</button></td>
+                    <td colspan="2"><button onclick="restart()">Начать заново</button></td>
+                </tr>
+            </table>
+        
+    </body>
+</html>
